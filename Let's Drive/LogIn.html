@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <meta charset="UTF-8">
+    <title>Let's Drive | Log In</title>
+
+    <link rel="stylesheet" href="LogSign.css">
+    <link rel="icon" href="car_logo.ico">
+</head>
+
+<body style="background-image: url('LogIn.jpg');">
+
+<?php
+	
+	$db=mysqli_connect("localhost", "root", "", "letsdrive");
+	
+	if(isset($_POST['LogInBtn'])) 
+	{
+
+		$username=mysql_real_escape_string($_POST['username']);
+		$password=mysql_real_escape_string($_POST['password']);
+
+		$result=mysql_query("select * from user where UserName='$username' and Pass='$password'");
+
+		$row=mysql_fetch_array($result);
+		if {$row['UserName']==$username && $row['Pass']==$password)
+		{
+			echo '<script language="javascript">';
+			echo 'alert("Log In Successfull!")';
+			echo '</script>';	
+		}
+		
+		else
+		{
+			echo '<script language="javascript">';
+			echo 'alert("Log In Unsuccessfull!")';
+			echo '</script>';
+		}
+	}
+
+
+
+
+
+?>
+
+    <div class="content">
+	<form action="LogIn.php" method="POST">
+        <div class="form-area">
+            <div class="img-area">
+                <img src="carlogo.png" alt="" >
+            </div>
+            <h2>Login Form</h2>
+            <p>User Name:</p>
+            <input type="text"  name="username">
+            <br/>
+            <br/>
+            <p>Password:</p>
+            <input type="password"  name="password">
+
+            <input class="btn" type="submit" name="LogInBtn" value="Log In">
+
+            <a href="#" class="for-pass">Forget Password?</a>
+
+            <a href="SignUp.html" class="sign">Sign Up</a>
+
+        </div>
+    </div>
+</body>
+</html>
+

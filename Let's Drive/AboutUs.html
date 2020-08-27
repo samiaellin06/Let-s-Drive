@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Let's Drive | About Us</title>
+    <link rel="icon" href="car_logo.ico">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+<!--nav bar-->
+<div class='menu'>
+
+  <span class='toggle'>
+    <i></i>
+    <i></i>
+    <i></i>
+  </span>
+
+    <div class='menuContent'>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Cars.php">Cars</a></li>
+            <li><a href="AboutUs.html" class="active">About Us</a></li>
+            <li><a href="LogIn.php" >Log In</a></li>
+			<li><a href="SignUp.php" >Sign Up</a></li>
+        </ul>
+        <div style="margin-right: 1000px;margin-top: -65px;overflow: hidden;"><img src="carlogo.png" id="logo"></div>
+    </div>
+</div>
+
+
+<script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+></script>
+<script>
+    $('.toggle').on('click', function() {
+        $('.menu').toggleClass('active');
+    });
+
+</script>
+
+<!--Parallex Effect About Us-->
+<div class="bA">
+   <section class="sA">
+   </section>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script type="text/javascript">
+		$(window).scroll(function(){
+			var scroll_position = $(window).scrollTop()/2;
+			$('section').css({
+				'background-position-x': - scroll_position + 'px',
+			})
+		})    
+	</script>
+	<div class="panel3">
+    <div class="p3">
+        <br>
+        <br>
+        <h1>HOW LET'S DRIVE WORKS</h1>
+        <p>Drive yourself to an adventure and back in 4 simple steps</p>
+    </div>
+    <div class="bigP3">
+
+        <div class="inP3">
+            <img src="b1.PNG">
+            <h3>BOOK</h3>
+            <p style="font-size: 13px">Search for and book a car on <br>our site!</p>
+        </div>
+
+        <div class="inP3">
+            <img src="b2.PNG">
+            <h3>UPLOAD LICENSE</h3>
+            <p style="font-size: 13px">Upload your driver’s license,<br> and pay a small security deposit.</p>
+        </div>
+
+        <div class="inP3">
+            <img src="b3.PNG">
+            <h3>LET'S DRIVE</h3>
+            <p style="font-size: 13px">Grab the keys and drive around<br>anywhere you want.</p>
+        </div>
+
+        <div class="inP3">
+            <img src="b4.PNG">
+            <h3>RETURN</h3>
+            <p style="font-size: 12px">Return the car to your preferable location.</p>
+        </div>
+
+    </div>
+</div>
+
+<h1 style="padding-left: 20px;color: darkorange; text-decoration: underline;">Customer Eligibility</h1>
+
+<ul style="list-style-type:disc; font-size:20px; color:georgian;">
+  <li>Customer must be 18 years of age or older.</li>
+  <li>Member must possess a valid Light Motor Vehicle (Non Transport).</li>
+  <li>Payments are only accepted through credit card, debit card or net banking</li>
+  <li>There is no minimum amount of time that an individual must hold a license before reserving a vehicle</li>
+  <li>Members must have had no alcohol or drug related driving violations in the past.</li>
+</ul>  
+
+<h1 style="padding-left: 20px;color: darkorange; text-decoration: underline;">Our Terms And Conditions</h1>
+
+<ul style="list-style-type:disc; font-size:20px; color:georgian;">
+  <li>There will be no refunds after booking.</li>
+  <li>Minimum duration for booking a car is 6 hours and maximum of 24 hours.</li>
+  <li>Our vehicles are free of fuel charges. We will provide the fuel for your journey.</li>
+  <li>For safety purposes, while driving, wearing seat belts is mandatory.</li>
+  <li>All the paper works of our vehicles are up to date and the vehicles are fit to be taken anywhere across the country.</li>
+  <li>If the customer loses the papers of the vehicle he have to pay for it.</li>
+  <li>In case of traffic, parking violations and over speeding, the customer have to pay all the fines.</li>
+  <li>In case of any accidents, the customer have to pay 50% of the overall demurrage cost. </li>
+  <li>Vehicles must be picked up and returned as per the location. If not, then there will be some fines added up to 500tk.</li>
+  <li>If a vehicle is returned late, a fine of up to 300tk will be added on the total charge.</li>
+  <li>Intentional damage to the vehicle or lose of any parts of the vehicle, or keys, the customer have to pay for it. </li>
+  <li>After placing a booking or subscription, .if the customer do not receive the vehicle or cancels the vehicle at the last moment, some charges will be added to his/her account.</li>
+  <li>In case of any conflicts between the agreements we have all the rights to terminate any kind of memberships.</li>
+</ul>  
+
+
+</div>
+
+<!--footer-->
+<footer >
+    <div>
+        <h4 style="border-bottom:2px solid white;">Our Services</h4>
+        <a href="#">Book A Car</a><br/>
+        <a href="#">Subscribe A Car</a><br/>
+    </div>
+    <div>
+        <h4 style="color:floralwhite;border-bottom:2px solid white;">Cities We Are In</h4>
+        <span id="branch-1">
+                    <a href="#">Dhaka</a><br/>
+                    <a href="#">Chittagong</a><br/>
+                    <a href="#">Sylhet</a><br/>
+                    <a href="#">Rangpur</a><br/>
+                </span>
+        <span id="branch-2">
+                    <a href="#">Khulna</a><br/>
+                    <a href="#">Rajshahi</a><br/>
+                    <a href="#">Barisal</a><br/>
+                </span>
+    </div>
+    <hr>
+    <h3 style="color: white;padding-left: 10px;">Follow Us On:</h3>
+    <ul id="FooterUl">
+        <li class="footerL">
+            <a href="https://www.facebook.com" target="_blank">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+        </li>
+
+        <li class="footerL">
+            <a href="https://www.instagram.com" target="_blank">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+        </li>
+
+        <li class="footerL">
+            <a href="https://www.twitter.com" target="_blank">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+        </li>
+
+
+    </ul>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <p style="color:white;font-size:15px;padding-left:10px;">© 2019 Let's Drive. All Rights Reserved.</p>
+</footer>
+</body>
+</html>
